@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors In Css</title>
+
+    <style>
+      /* Universal Selector:- Selects All Html Elements. */
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* Element Selector:- Selects A Particular Element. */
+      h3 {
+        color: royalblue;
+      }
+
+      /* Id Selector:- Selects An Id. */
+      #bg-lime {
+        background-color: lime;
+      }
+
+      /* Class Selector:- Selects A Class. */
+      .color-blue{
+        color: blue;
+      } 
+
+      /* Grouping Selector:- Selects All Html Elements With Same Style.*/
+      h2, p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>I Am An Element Selector</h3>
+    <div id="bg-lime">I Have An Id</div>
+    <div class="color-blue">I Have A Class</div>
+
+    <h2>Introducing Grouping Selector.</h2>
+    <p>I'm A Part Of Grouping Selector</p>
+  </body>
+</html>
