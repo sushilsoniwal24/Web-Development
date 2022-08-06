@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties In Css</title>
+
+    <style>
+      /* =>display: block; (1) New Line (2) Full Width (3) Height & Width Apply */
+      /* =>display: inline; (1) No New Line (2) No Full Width (3) No Height & Width Apply */
+      /* =>display: inline-block; (1) No New Line (2) No Full Width (3) Height & Width Apply */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box1 {
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(31, 13, 225);
+      }
+
+      .box2 {
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(225, 13, 112);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat
+      numquam suscipit debitis necessitatibus ducimus molestiae et veritatis a,
+      similique, nemo vitae enim. Nisi, reprehenderit?
+    </div>
+
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat
+      numquam suscipit debitis necessitatibus ducimus molestiae et veritatis a,
+      similique, nemo vitae enim. Nisi, reprehenderit?
+    </div>
+  </body>
+</html>
