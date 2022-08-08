@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Position Property</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main-div {
+        border: 2px solid black;
+        width: 50%;
+        padding: 10px;
+        margin: 60px;
+        /* position: relative; */
+      }
+
+      /* 
+      (1) Element positioned relative to its normal position.
+      (2) Don't allow anyone to come at his past position
+       */
+      .relative {
+        background-color: red;
+        height: 200px;
+        display: inline-block;
+        width: 30%;
+        position: relative;
+        top: 30px;
+      }
+
+      /* 
+      (1) Element positioned relative to its first positioned(Not-Static) parent.
+      (2) No positioned parent -> Body.
+      (3) Allow anyone to come at his past position
+       */
+      .absolute {
+        background-color: blue;
+        height: 200px;
+        display: inline-block;
+        width: 30%;
+        position: absolute;
+        bottom: 35px;
+      }
+
+      /* 
+      (1) Element positioned relative to browser window.
+      (2) Allow anyone to come at his past position
+       */
+      .fixed {
+        background-color: lime;
+        height: 200px;
+        display: inline-block;
+        width: 30%;
+        position: fixed;
+        top: 50%;
+        left: 80%;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="main-div">
+      <div class="relative"></div>
+      <div class="absolute"></div>
+      <div class="fixed"></div>
+    </div>
+  </body>
+</html>
